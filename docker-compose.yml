@@ -6,10 +6,10 @@ services:
     build: .
     ports: 
       - 69:69/udp
-      - 80:80/tcp
+      - 880:80/tcp
       - 3260:3260/tcp
     volumes:
       - /iso:/iso
     environment:
-      - IPADDR=10.0.2.2
+      - IPADDR=192.168.1.251
     restart: unless-stopped
