@@ -9,7 +9,7 @@ services:
       - 880:80/tcp
       - 3260:3260/tcp
     volumes:
-      - /iso:/iso
+      - /volume1/docker/pxe/iso:/iso
     environment:
       - IPADDR=192.168.1.251
     restart: unless-stopped
